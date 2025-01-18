@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dylaurette</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!--script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header" id="header">
+        <div class="container">
+            <nav>
+                <a href="#home"><p class="logo">YOUKOU <span>Dodo Laurette</span></p></a>
+                <ul id="sidemenu" class="menu">
+                    <li><a href="#home" class="active">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div id="home" class="header-text">
+                <p>Développeuse Fullstack (web/mobile) - Digital Creator</p>
+                <h1>Hello ! Je suis <span>Laurette</span>, Développeuse<br>  passionnée par le web et le design !</h1>
+                <button class="btn" onclick="window.location.href='#projects';">Voir mes projets</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/BG2.png" alt="Image de présentation">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">À propos de moi</h1>
+                    <p>Bienvenue sur mon portfolio en ligne. Je suis une professionnelle passionnée par les technologies et l'impact social, avec un parcours atypique qui reflète ma polyvalence et mon engagement. <br><br>
+
+                        Après des études en informatique de gestion, j'ai enrichi mes compétences en participant à des programmes tels que Sheisthecode en 2017 et DigiFemmes Academy, où j'ai été formée en développement fullstack avec une spécialisation en data analytics. J'ai également suivi la formation de Digital Creator à Simplon, travaillant sur divers projets concrets, et poursuivi des formations en développement web et mobile avec Dclic. <br><br>
+                        
+                        Mon parcours professionnel est marqué par une diversité d'expériences. J'ai débuté en tant qu'administratrice e-commerce et formatrice chez 7Cortex, une entreprise spécialisée dans le développement d'applications de gestion et l'optimisation des processus de travail. J'ai ensuite occupé le poste d'assistante de direction chargée des tâches administratives, où j'ai développé des compétences en organisation et en gestion. Par la suite, j'ai été gestionnaire e-commerce et conseillère-client à la Librairie de France, contribuant au développement de la boutique en ligne. J'ai également été journaliste web pour Abidjanshow.com et rédactrice à EMICIV, affinant ainsi mes compétences rédactionnelles. Actuellement, je suis chef de projet stratégique pour l'Africa TechUp Tour, un programme continental lancé en 2019 visant à former la jeunesse africaine aux domaines de l'intelligence artificielle et de la data science. <br><br>
+                        
+                        Engagée dans des initiatives à fort impact social, j'ai été chef de projet pour "À ton tour de lire" au sein de l'ONG EWA, un projet soutenu par l'UNICEF visant à aider les enfants du CE1 au CM2 à améliorer leurs compétences en lecture, écriture, informatique et anglais. De plus, j'ai représenté la députée Yasmina Ouégnin, élue de la circonscription de Cocody, auprès des femmes de la ville de Ferkessédougou et des élèves du lycée de ladite ville. <br><br>
+                        
+                        Actuellement, je suis membre d'un club de développement durable, où j'occupe le rôle de responsable paix et justice. Mon parcours atypique témoigne de ma capacité à m'adapter à divers environnements professionnels et de mon engagement à contribuer positivement à la société. </p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('Compétences,event')">Compétences</p>
+                        <p class="tab-link" onclick="opentab('Expériences')">Expériences</p>
+                        <p class="tab-link" onclick="opentab('Formation')">Formation</p>
+                    </div>
+                    <div class="tab-content active-content" id="Compétences">
+                        <ul>
+                            <li><span>Développeuse</span><br>Sites internet, Apps web et mobile</li>
+                            <li><span>UI/UX</span><br>Pour interfaces web et mobiles</li>
+                            <li><span>Data Analyst</span><br>Analyse de données</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Expériences">
+                        <ul>
+                            <li><span>Juillet 2024 à Mars 2025</span><br>Stagiaire Digital Creator à MTN Academy by Simplon</li>
+                            <li><span>Depuis octobre 2023</span><br>Animatrice sessions tutoriels à DigiFemmes Academy</li>
+                            <li><span>Depuis février 2019</span><br>Chef de Projet au Programme Africa Tech Up Tour</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Formation">
+                        <ul>
+                            <li><span>Décembre 2024 - Janvier 2025</span><br>Formation en Développement web et mobile - Programme DCLIC</li>
+                            <li><span>Juillet 2024 - Février 2025</span><br>Formation pratique Digital Creator - Simplon CI</li>
+                            <li><span>Octobre 2023 - Juin 2024</span><br>Formation en Développement Fullstack - DigiFemmes Academy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <a href="img/Laurette YOUKOU-CV.pdf" download class="btn btn2">Télécharger mon CV</a>   
+
+        </div>
+
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Mes projets</h1>
+            <div class="projects-list">
+                <div>
+                    <h2>Développement Web</h2>
+                    <p>Conception avec HTML, CSS, JS</p>
+                    <button class="btn">Voir</button>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Création de maquettes avec Figma</p>
+                    <button class="btn">Voir</button>
+                </div>
+                <div>
+                    <h2>Application Mobile</h2>
+                    <p>Conception avec MIT App Inventor</p>
+                    <button class="btn">Voir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SKILLS SECTION -->
+    <div id="skills" class="skills-container">
+        <div class="container">
+            <h1>Mes Compétences</h1>
+            <div class="skills-section">
+                <div class="skills-card">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <p>Gestion de projet</p>
+                        <div class="progress-bar"><span style="width: 70%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <p>Résolution de problème</p>
+                        <div class="progress-bar"><span style="width: 60%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <p>Facilité d'adaptation</p>
+                        <div class="progress-bar"><span style="width: 90%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <p>Amoureuse d'apprentissage</p>
+                        <div class="progress-bar"><span style="width: 80%;"></span></div>
+                    </div>
+                    
+                </div>
+                <div class="skills-card">
+                    <h3>Hard Skills</h3>
+                    <div class="skill">
+                        <p>HTML</p>
+                        <div class="progress-bar"><span style="width: 90%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <p>CSS</p>
+                        <div class="progress-bar"><span style="width: 80%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <p>JavaScript</p>
+                        <div class="progress-bar"><span style="width: 50%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <p>Python</p>
+                        <div class="progress-bar"><span style="width: 40%;"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contactez-moi</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>iphonedylaurette@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+225 07 789 013 83</p>
+                <p><i class="fa-solid fa-globe"></i>Abidjan, Côte d'Ivoire</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=61566186627281"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/technomad1/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dodo-laurette-youkou-281b41153/"><i class="fa-brands fa-linkedin"></i></a>
+                </div> 
+               
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Nom" required>
+                    <input type="email" name="Email" placeholder="exemple@gmail.com" require>
+                    <textarea name="Message" id="" row="8" placeholder="Message" required></textarea>
+                    <button type= "submit" class="btn btn2">Envoyer</button>
+                </form>
+            </div>
+
+          </div>  
+        </div> 
+    </div>
+    
+    <button id="back-to-top" class="back-to-top">↑</button>
+    <!-- FOOTER -->
+    <footer>
+        <span>Designed by <a href="#">YOUKOU Dodo Laurette</a> with HTML, CSS, and JS</span>
+        <span>© Tous droits réservés 2025</span>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
